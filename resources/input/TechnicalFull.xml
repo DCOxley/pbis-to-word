@@ -1,0 +1,1195 @@
+<root>
+    <tracker id="304695" name="PBI" project="CPT_FTPP">
+        <task id="21230">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Create PresentationContext-Class tailored to each Perspective</field>
+                <field title="Status">Accepted</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!Create PresentationContext-Class tailored to each Perspective&#13;
+* define a class specifically for each perspective&#13;
+* avoid inheritence : composition over inheritence&#13;
+* create perspective specific listeners&#13;
+* Newly created PresentationContext classes are instantiated and assigned to a Perspective in PerspectiveHelper</description>
+        </task>
+        <task id="21137">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Instantiate perspectives through ApplicationModel and not snippets</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Instantiate perspectives through ApplicationModel and not snippets&#13;
+* Depending on [ISSUE:21136]&#13;
+* Currently these are instantiated through snippets. This should be removed.&#13;
+* Instead instantiate the perspectives when ApplicationModel is started&#13;
+* Perspectives will contain their window layouts, but otherwise be empty until a treatment is selected&#13;
+* (?) __Question__ : when a treatment is selected, then a change is published to the perspectives through the service. Should all parts then be populated or just those belonging to the currently selected perspective?&#13;
+** Since perspectives are already open, listeners are listening to changes to the treatment -&gt; all parts are populated at the time the treatment changes&#13;
+** OR populate perspective when switching to specific perspective, deactivate all the others -&gt; no listener for selected treatment needed&#13;
+* Why?&#13;
+** At the moment, perspectives are disposed every time a treatment changes, this is resourceful since all UI elements have to be disposed and reinstantiated when opening a new treatment&#13;
+** With the proposed solution, UI elements are not disposed everytime the treatment changes, but listen to the changed content</description>
+        </task>
+        <task id="21138">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Update perspectives in reaction to treatment change</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Update perspectives in reaction to treatment change&#13;
+* Depends on [ISSUE:21136]&#13;
+* Register to treatment selection topic in specific perspective IEclipseContext&#13;
+* Handle lifecycle of CacheContext (dispose when treatment selection changes)&#13;
+* Handle change of treatment in all perspective related contexts (e.g. PartContexts) on the perspective IEclipseContext</description>
+        </task>
+        <task id="21232">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Improve Resource management</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Improve Resource management&#13;
+* trigger to clean up should be closing an open patient on a new patient load&#13;
+* add functionality to dispose objects from object store&#13;
+* handle disposal of resource intensive (vtk) objects&#13;
+* investigate whether this can be an asynchronous process</description>
+        </task>
+        <task id="21129">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Database update process</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Database update process&#13;
+!2 Tool evaluation&#13;
+* (?) Can diff scripts be generated independently of sql dialect&#13;
+* looking for a tool which can perform following tasks:&#13;
+** automatic generation of migration scripts&#13;
+** automatic setting of database version&#13;
+&#13;
+!2 Database versioning&#13;
+* do not complete until tools have been evaluated&#13;
+* introduce Database versioning without entity&#13;
+* directly with sql commands in setup&#13;
+* EntityManager check valid version compatibility using sql query</description>
+        </task>
+        <task id="21199">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Add setup to IDE virgo plan</field>
+                <field title="Status">Accepted</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Add setup to IDE virgo plan&#13;
+* use propoerties file for switching configurations&#13;
+* add spring nature to setup bundle&#13;
+* make setup launchable through virgo</description>
+        </task>
+        <task id="20273">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Experiment with eclipse rcp TT</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Experiment with eclipse rcp TT&#13;
+[https://www.eclipse.org/rcptt/documentation/userguide/getstarted/]&#13;
+* works quite well .&#13;
+* was not able to connect it to FTPP. Only to a 'normal' eclipse ide.&#13;
+* possibly to do with the login screen.&#13;
+[https://www.eclipse.org/forums/index.php/t/1068163/]</description>
+        </task>
+        <task id="20964">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Seperate GridData from DataArray to speed up access of information about grid</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Seperate GridData from DataArray to speed up access of information about grid&#13;
+* Grid information and data array are on same hierarchial level in model&#13;
+* Change this so that accessing grid parameters does not require full image data.</description>
+        </task>
+        <task id="21180">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Make Parts listen to treatment selection changes</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Make Parts listen to treatment selection changes&#13;
+* Make parts listen to posted root treatment (everywhere where EntityPresentationModel.getEntity() is called)&#13;
+* All parts need to be creatable with null treatment because parts will be created before treatment is set when perspectives are modelled in eclipse ApplicationModel and not snippets anymore&#13;
+* When finished with everything: get rid of EntityPresentationModel&#13;
+* Parts with listener methods must be injected through EclipseContext&#13;
+* [WIKIPAGE:325177]&#13;
+!2 Example :&#13;
+* topic is called ApplicationRootEntityChanged&#13;
+* Used in Details Part</description>
+        </task>
+        <task id="20294">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">(automatize) Mavenize / Jenkinize Database Setup</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 (automatize) Mavenize / Jenkinize Database Setup&#13;
+!2 Problem&#13;
+* ftpp-storage (CT blobs) need to be copied manually to other applications&#13;
+* These Files are created during DB Setup, which is currently launched from Eclipse IDE&#13;
+* check length of database identifiers automatically&#13;
+!2 Possible Solutions&#13;
+* Possible (part) solution&#13;
+** Create different products for every enviroment (local, DEV, TST, PRD)&#13;
+** Create maven script to scp files to remote servers&#13;
+* Possible (whole) solution&#13;
+** Do all the above stuff&#13;
+** Create Jenkins Jobs to run stuff (at least to DEV, because this is done regularly, and DB is copied from DEV when using TST afterwards..)&#13;
+** How can DB deletion be done?&#13;
+!2 Advantages&#13;
+* Possibility to go back to versions / tags easily&#13;
+* Independence of local environment&#13;
+* Less error prone (wrong database selection, etc.)&#13;
+!2 Links&#13;
+!3 DB Migration&#13;
+* [https://flywaydb.org/getstarted/java]&#13;
+* [https://blog.codinghorror.com/get-your-database-under-version-control/]&#13;
+* [http://erdalkaracade.blogspot.com/2014/03/a-general-approach-to-migrating-emf.html]&#13;
+* [https://www.liquibase.org/databases.html] freeware for migration scripts&#13;
+* [http://www.eclipse.org/eclipselink/documentation/2.4/jpa/extensions/p_ddl_generation.htm#BABHEJJI] eclipselink tables-create-or-extend&#13;
+* [https://www.nominet.uk/improving-our-database-deployment-process-for-the-oxford-flood-network/] deployment process with DBs</description>
+        </task>
+        <task id="20344">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Refactor a  G2 Model Bundle</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Refactor a  G2 Model Bundle&#13;
+* Think about a G2 Model Bundle, because Leadmarks and CT Offsets are only used with G2</description>
+        </task>
+        <task id="20984">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Automate pulling GPU docker files to asm/home folder</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Automate pulling GPU docker files to asm/home folder&#13;
+!2 Current status&#13;
+* each user must pull files needed for GPU calculation to their asm/home folder manually so that they can be used on the GPU server when the GPU calculations are performed&#13;
+&#13;
+!2 Desired status&#13;
+* Prefer for this to be either be no longer necessary or automated</description>
+        </task>
+        <task id="21041">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Refactor Wizards</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Refactor Wizards</description>
+        </task>
+        <task id="21078">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Extract configurations from PresentationContext Part III</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">Remove currentDoseLUT (set/get) from PresentationContext &amp; Listener&#13;
+* handle setting in show difference&#13;
+* should this be a global setting?</description>
+        </task>
+        <task id="21084">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Make sure default values are updated with p2 auto update</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Make sure default values are updated with p2 auto update</description>
+        </task>
+        <task id="21085">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Refactor Client/fragment UI monolith</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Refactor Client/fragment UI monolith&#13;
+* client UI bundle is a monolith and needs to be refactored into multiple bundles</description>
+        </task>
+        <task id="21091">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Send data from app server to GPU server</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Send data from app server to GPU server&#13;
+* currently the data are retrieved from the database and given to the client, where they are sent to the GPU server for calculation&#13;
+* rearrange this so that the data are retrieved by the app server when needed and sent only to GPU server.&#13;
+* this reduces number of times data is sent through the network&#13;
+* it also reduces memory usage on the client stations .&#13;
+\\&#13;
+* this holds for many different types of data&#13;
+* beam data, ct calibration data ,&#13;
+* potentially raw CT image data</description>
+        </task>
+        <task id="21329">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Analyse client memory consumption with visual VM</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Analyse client memory consumption with visual VM</description>
+        </task>
+        <task id="21098">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Make Group Size configurable through file on GPU server</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Make Group Size configurable through file on GPU server&#13;
+* tweeking the group size can improve performance&#13;
+* make these parameters configurable to allow experimentation and optimisation</description>
+        </task>
+        <task id="19885">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Version check on start up</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Version check on start up&#13;
+* Perform a check on start up of a client to see if it is compatible with the current version of the server&#13;
+* Extend this check to see that the client and server combination is also compatible with the database model version</description>
+        </task>
+        <task id="19999">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Stress Tests on medium scale: Power Users simultaneously</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Stress Tests on medium scale: Power Users simultaneously&#13;
+* Organise all power users to access and run FTPP simultaneously to try to provoke conflicts on the server and measure its robustness</description>
+        </task>
+        <task id="20411">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Move constants/configurations to config file</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Move constants/configurations to config file&#13;
+* Constants e.g. DVH bin size&#13;
+* Configurations, e.g. algorithm extensions</description>
+        </task>
+        <task id="20629">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Database indexing for look up speed</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Database indexing for look up speed&#13;
+* indentify slow transactions&#13;
+* identify candidates which can benefit from indexing&#13;
+* index them in ecore model</description>
+        </task>
+        <task id="20693">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Reuse CalculateFieldJob in Setup</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!! Reuse CalculateFieldJob in Setup&#13;
+* Reuse CalculateFieldJob in Setup&#13;
+* Use in plugin test</description>
+        </task>
+        <task id="20908">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Mechanism to show / store (in memory) warnings / errors and propagate them to QA reports</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Mechanism to show / store (in memory) warnings / errors and propagate them to QA reports</description>
+        </task>
+        <task id="20341">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Cancelable Application Exit</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">When exiting the FTPP Client using the cross in the title bar, a save dialog is opened (ApplicationShutdownAddon.java) but the 'Quit' operation is not cancelable.&#13;
+&#13;
+* Find another event, before exiting application (QuitHandler?)&#13;
+* Look for an event which allows unsaved changes to be detected on an operating system restart</description>
+        </task>
+        <task id="20677">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Replace createContextMenu (e3) with e4 ApplicationModel</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!3Replace createContextMenu (e3) with e4 ApplicationModel&#13;
+* in SeriesTable&#13;
+* in ImptConstraintsTable&#13;
+* in OptimizationGroupDefinitionPage&#13;
+* in VerificationPreparationTree</description>
+        </task>
+        <task id="19683">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">More test patients</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!! Create more test patients in more diverse states&#13;
+* more test patients in different states&#13;
+{{{&#13;
+A set of test patient cases typical treatment sites and indication shall be planable in a safe and efficient way with FTPP. This set of test cases shall include at least:&#13;
+- Opt. techniques: SFUD, SFO, MFO,&#13;
+- Treatment consisting of multiple series&#13;
+- Specialities: SIB, patches fields, rescanning, field with centre of field shifted, different normalizations (mean of PTV, techPTV, median?)&#13;
+- Sites: Head, H&amp;N, Sacral/Cervical Spine, Nasal cavity, CSA, Eye , Others (Thorax, Abdomen, Extremeties)&#13;
+}}}</description>
+        </task>
+        <task id="20000">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Stress Tests on large scale: Simulate department wide access to server</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Stress Tests on large scale: Simulate department wide access to server</description>
+        </task>
+        <task id="20742">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Avoid double book-keeping between IDE-ftpp.plan - and pom deploy plan definition</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Avoid double book-keeping between IDE-ftpp.plan - and pom deploy plan definition</description>
+        </task>
+        <task id="20800">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Move image resources to server e.g. icons</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Move image resources to server e.g. icons</description>
+        </task>
+        <task id="21288">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">User login to be limited to CPT users</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1User login to be limited to CPT users&#13;
+* adjust login procedure so that the user must be a member of CPT and not PSI</description>
+        </task>
+        <task id="21124">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Create virgo docker image with two plans</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Create virgo docker image with two plans&#13;
+* This is needed to automate / assist database re-build.&#13;
+* The dockerized virgo should have two plans&#13;
+* A shell script should determine which plan to start by passing an arugment to the application server&#13;
+* launches not as product&#13;
+* clear / drop in eclipselink insteaed of create schema</description>
+        </task>
+        <task id="19408">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Dicom Connectivity Test</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Dicom Connectivity Test&#13;
+* The automated test which runs locally to test the dicom connectivity to Velocity needs to run in the automated test environment</description>
+        </task>
+        <task id="19702">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">RMI / SSL encryption for RemoteObject-Connection</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">Problem:&#13;
+* By now only the RMI-Registry-Lookup-Connection is secured using SSL/TLS ...&#13;
+* Every Method call on remote objects carry the username and password in clear text ...</description>
+        </task>
+        <task id="19819">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Only activate generate steering files button if service is available</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Only activate generate steering files button if service is available&#13;
+* requires ability to check SFGen service</description>
+        </task>
+        <task id="20105">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Vtk Structure Actor Cacheing</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!Problem:&#13;
+In the current state of FTPP the StructuresViewListener caches the vtkActors of the contours. If one switches the ViewDirection of a NewVtkPart, the structures needs to be recalculated again.&#13;
+&#13;
+!!Solution:&#13;
+Move the cacheing of the actors to a shared object (somewhere in VtkPresentationContext)</description>
+        </task>
+        <task id="20659">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Investigate why Java streams do not work on server side</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Investigate why Java streams do not work on server side&#13;
+* may be related to IDList</description>
+        </task>
+        <task id="21007">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Create own ActiveMQ docker image to not rely on external url</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Create own ActiveMQ docker image to not rely on external url&#13;
+* Is this still necessary ?&#13;
+* Will it be a spike instead?</description>
+        </task>
+        <task id="21116">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Investigate whether Preferences ini-file is updated with p2 update</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Investigate whether Preferences ini-file is updated with p2 update</description>
+        </task>
+        <task id="21192">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">4</field>
+                <field title="Summary">Replace UI forms with CSS</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Replace UI forms with CSS&#13;
+* UI forms is e3 and is outdated&#13;
+* find suitable replacement for example CSS&#13;
+* understand how much work is necessary to make this change.</description>
+        </task>
+        <task id="20147">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Improve Enum initialization (TypeTypes)</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!! Improve Enum initialization (TypeTypes)&#13;
+!! Problem description&#13;
+* TypeTypes have a map&#13;
+* The maps are initialised in the main thread&#13;
+* Otherwise there is an assertion error "Realm cannot be null"&#13;
+\\&#13;
+!! Potential solution&#13;
+* Centralise and automate enum initialisation</description>
+        </task>
+        <task id="19373">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Auto Deployment</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Auto Deployment&#13;
+*timeline config bundles</description>
+        </task>
+        <task id="19397">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Traffic light display for dependent services</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Traffic light display for dependent services</description>
+        </task>
+        <task id="19435">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Refactoring clean up on code level of Dose Calculation</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Refactoring clean up on code level of Dose Calculation</description>
+        </task>
+        <task id="19721">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Deployment Cleanup - Client P2 Update</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Deployment Cleanup - Client P2 Update&#13;
+!2 Description&#13;
+* After starting a FTPP Client from a local installation, there is a check for new bundles &amp; features&#13;
+* These bundles are renewed after every new FTPP release (all the bundles and features are set to the new version)&#13;
+* New Features are downloaded and old ones are deleted, new bundles are downloaded but old one remain in the folder&#13;
+* A lot of 'old' bundles are found in the client folder&#13;
+* There is the concept of garbage collection for P2&#13;
+* The specific flag has already been turned on but does not seem to work (not working for E4?)({{{/ch.psi.ftpp.rcp.app/plugin_customization.ini}}})&#13;
+!2 Steps to be done&#13;
+* Check if garbage collection does work after more releases&#13;
+* If not, find another solution&#13;
+* see&#13;
+** [https://wiki.eclipse.org/Equinox/p2/FAQ]&#13;
+** [http://www.eclipse.org/forums/index.php?t=msg&amp;goto=132454]&#13;
+!2 Acceptance Criteria&#13;
+* Knowledge about P2 garbage collection mechanism&#13;
+* Solution how to delete 'old' plugins in client installations</description>
+        </task>
+        <task id="19722">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Deployment Cleanup - Docker Registry</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Deployment Cleanup - Docker Registry&#13;
+!2 Description&#13;
+* At the moment, after every FTPP deploy, a new image is build and published to the docker registry&#13;
+* These images contains a lot of data (virgo image is 500+ MB)&#13;
+* Old version images are not needed anymore if they are not tagged by a specific environment (ftpp-dev, ftpp-prd, ..)&#13;
+!2 Steps&#13;
+* Find a way to clean the docker-registry and not holding to many 'old' images&#13;
+* Possibilities:&#13;
+** [https://www.johnsonabogados.com/ohermosa/cleanup-docker-registry/src/master]&#13;
+** [https://github.com/ricardobranco777/registry_view]&#13;
+** docker-compose file of docker-registry:&#13;
+{{{&#13;
+   environment:&#13;
+      - REGISTRY_STORAGE_DELETE_ENABLED=true&#13;
+}}}&#13;
+!2 Acceptance Criteria&#13;
+* Knowledge about docker registries garbage collection &amp; delete stragety&#13;
+* Solution how to deal with 'old' docker registry images</description>
+        </task>
+        <task id="19723">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Deployment Cleanup - Nexus Repositories / Maven artifacts</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Deployment Cleanup - Nexus Repositories / Maven artifacts&#13;
+!2 Description&#13;
+* At the moment, after every FTPP deploy, the new FTPP bundles are sent to the nexus repository manager (maven m2 repositories, client p2 repositories, possibly .m2 directory of cpt-ci)&#13;
+* A lot of unused data is saved&#13;
+!2 Steps&#13;
+* Find out which artifacts are stored where (possibly .m2 maven directory of the cpt-ci for the maven artifacts AND in the nexus release or snapshot maven repository)&#13;
+* Find a way to tell maven where to store data (distributionManagement in parent pom.xml, repositories in settings.xml, ...)&#13;
+* Possibilities:&#13;
+** Clean nexus with tasks in Nexus UI&#13;
+** Clean nexus with script over API [https://gist.github.com/oliverdaff/2233777]&#13;
+** Bring maven to only deploy on nexus repository, or only in filesystem&#13;
+!2 Acceptance Criteria&#13;
+* Knowledge about artifacts locations and what is created in which maven step&#13;
+* Solution how to deal with 'old' nexus and m2 repositories</description>
+        </task>
+        <task id="20802">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Consider hierarchical modification context</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Consider hierarchical modification context&#13;
+&#13;
+&#13;
+!2 Problem description&#13;
+* FTPP client application has one modification context&#13;
+* This modification accumulates with changes until the user triggers a save action&#13;
+* Temporary changes made in a dialog should not be part of this (main/parent) modification context in case 'Cancel' is chosen&#13;
+!2 Question&#13;
+* is it worth considering prompting the user to save before opening a dialog ? - This would 'clear' the modification from previous changes.</description>
+        </task>
+        <task id="21231">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">3</field>
+                <field title="Summary">Replace listeners with eventbus</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Replace listeners with eventbus&#13;
+* VtkContextListener : replace Listener --&gt; e4 eventbus*&#13;
+* CompareListener : replace Listener --&gt; e4 eventbus&#13;
+* ISeriesSelectionListener : replace Listener --&gt; e4 eventbus</description>
+        </task>
+        <task id="20034">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Improve configuration of object store</field>
+                <field title="Status">Accepted</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Improve configuration of object store&#13;
+* Object store contains a ring buffer which may be overflowing with high number of entities&#13;
+* Investigate realstically required object store and re-configure</description>
+        </task>
+        <task id="19624">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Setup infrastructure for tests involving DB</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W"># Setup in memory DB&#13;
+# Generate sample data blobs (in binary files) to avoid calculation in setup&#13;
+# Bring DB initializer up to date (Patient, Treatment, PlanningDataSet, Plan, Fields etc.)&#13;
+# Apply DB initialzer to in memory DB&#13;
+# Initial use-case test locking process (use locking service to lock a plan and test if all required entities are locked)&#13;
+# Test cascade delete on entity cleanup</description>
+        </task>
+        <task id="20747">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Test database indexing on patient search query</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1Test database indexing on patient search query&#13;
+&#13;
+!! Conclusions&#13;
+* Database indexing tested on a small patient set&#13;
+* slightly faster, but inconclusive&#13;
+* needs to be tested on large , highly entropic datapool (i.e. best on live-data, else creation of 1000 diverse test patients in setup code)&#13;
+* Databases are "too clever" for simple examples to work. A lot of problems already optimised.&#13;
+* This problem can be used to speed up FTPP queries when the time comes.&#13;
+* @java.persistence.Index cumbersome since only possible for descriptive/explicit schema definition (embeddable in @java.persistence.Table, @java.persistence.Column annotation)&#13;
+* Alternatives provided by used JPA implementation (see https://www.eclipse.org/eclipselink/documentation/2.4/jpa/extensions/a_index.htm), leads to dependency to an implementation since we do not separate api and implementation in our model bundles.&#13;
+&#13;
+!! How To Add Indexing In FTPP&#13;
+* Find (potentially) slow function where you know the function consists of DB interaction (e.g. using queries.xml)&#13;
+* Use a development system connected to the productive database system (not to the productive database scheme!!!). All further analysis needs to be performed on the database used in productive system, because each database vendor and implementation/version behaves differently...&#13;
+* Increase the root log level of Virgo ({{/&lt;virgo-root&gt;/configuration/servicability.xml}}) to {{FINE}}: {{{&#13;
+...&#13;
+&lt;root level="FINE"&gt;&#13;
+      &lt;appender-ref ref="SIFTED_LOG_FILE" /&gt;&#13;
+      &lt;appender-ref ref="LOG_FILE" /&gt;&#13;
+  &lt;/root&gt;&#13;
+        ...}}}&#13;
+* (Re-)Start server and client and use the slow function.&#13;
+* Look for following log entries in the {{/&lt;virgo-root&gt;/serviceability/logs/log.log}} related to the slow function:&#13;
+{{{&#13;
+...&#13;
+[2019-06-14 15:29:42.256]  TCP Connection(6)-127.0.0.1          System.out       [EL Fine]: sql: Connection(1482027924)--SELECT ID, LABEL, REVISION, LOCKSTATE_ID FROM STRUCTURE_SETS WHERE (ID = ?)&#13;
+...}}}&#13;
+* Stop the server and client&#13;
+* Copy generated SQL to your DB administration client&#13;
+* Execute the query (replace the question marks with meaningful parameter values (e.g. from debugging)) and confirm result&#13;
+* Execute the query plan for above query (e.g. in pgAdminIII this is called 'Explain' or 'Explain analyze' offered in the 'Query' menu)&#13;
+* Analyse the query plan for the query parameters and look for 'sequential' look-ups. Note query performance.&#13;
+* Annotate the attribute in the ecore model corresponding to the queried columns with {{@org.eclipse.persistence.annotations.Index}}&#13;
+* Add dependency {{org.eclipse.persistence.annotations}} to your model bundles import packages list.&#13;
+* Generate the model code, watch out for the inserted annotation(s) above the getter(s)&#13;
+* Generate schema with index(es) by __either__&#13;
+** running full setup __OR__&#13;
+** creating DDL and only running the index creation commands using the createScripts option in CreateAndInitializeDatabase&#13;
+* Execute the query again and confirm result&#13;
+* Execute and analyse the query plan for the query parameters and look for 'indexed' look-ups. Compare query performance.</description>
+        </task>
+        <task id="19322">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Live Entity Handling</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">Live Entity Handling</description>
+        </task>
+        <task id="19454">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Docker registry on continuous integration server</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Docker registry on continuous integration server&#13;
+* with user and password&#13;
+* with secure registry&#13;
+* TLS certificate&#13;
+* nexus not working with insecure registries</description>
+        </task>
+        <task id="19477">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Define automatic tests of a full plan</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Define automatic tests of a full plan&#13;
+&#13;
+!! Additional information&#13;
+* Commissioning tests for Gantry3 are defined [here | DOC:248381]&#13;
+* Example of annual psiplan QA tests, which are candidates for UnitTest automation is available on G-Disk (and attached)&#13;
+{{{G:\ASM_Groups_Users\Groups\Medizinphysik\QA\Gantry 2\Yearly\2016\System_release\June\reports\YQA-7370_results_june2016.xls}}}</description>
+        </task>
+        <task id="19480">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Testing of configuration management</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Testing of configuration management&#13;
+* test that different bundles (PRD, DEV , TST ) work to configure different types of deployment&#13;
+* This needs different test systems to be available.</description>
+        </task>
+        <task id="19482">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Investigate Nexus</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Investigate Nexus&#13;
+&#13;
+!2 Starting point&#13;
+* The configuration of Nexus (different repositories) is currently not stored which means that when setting up a new server, all configuration has to be done manually&#13;
+* There is no user handling (one user)&#13;
+* There is no TLS&#13;
+&#13;
+!2 Possible steps&#13;
+* Nexus into Docker or Nexus configuration export?&#13;
+* add different users with different rights&#13;
+* SSL key for TLS</description>
+        </task>
+        <task id="19523">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">First dose distribution reference test</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!First dose distribution reference test&#13;
+* move setup code into a test bundle&#13;
+* revise set up code in test bundle to bring test patient up to date&#13;
+* trigger this code from the setup bundle and perform the persistence there&#13;
+* use these data as a starting point for some initial tests&#13;
+* use the dicom imports and exports to evaluate the results of this test&#13;
+* initial test : one test dose calculation compared to a previously stored/ exported dose distribution</description>
+        </task>
+        <task id="19715">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Assisted Database migration using Jenkins</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Assisted Database migration using Jenkins</description>
+        </task>
+        <task id="19724">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Deployment Cleanup - Virgo Docker Build should have same image ID with same versions</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Deployment Cleanup - Virgo Docker Build should have same image ID with same versions&#13;
+!2 Description&#13;
+* If a docker image contains exactly the same files in the image build directory, docker recognizes the image build as the same image, so the image IDs are equivalent (no new image is stored)&#13;
+* The FTPP virgo build generates all artifacts from scratch for every deploy, so these artifacts have the same content but are not the same files&#13;
+* The FTPP publish job deploys a SCM tag, so new artifacts are built and the files differ from the old deployment&#13;
+* Because of this, every time a virgo image is built, a new image is created with a different ID, this should not be the case, since the content of these images are equivalent&#13;
+!2 Steps&#13;
+* Possiblities:&#13;
+** Take the artifacts from the nexus repository (make sure they are only built once for one version - important for SNAPSHOTS)&#13;
+** Find another way to publish virgo, e.g. by jenkins pipeline, so the images are not built for every deploy, but only tagged&#13;
+!2 Acceptance Criteria&#13;
+* Docker Virgo Images have the same Image ID when contain the same version artifacts</description>
+        </task>
+        <task id="19761">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Investigate Jenkins Jobs</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Investigate Jenkins Jobs&#13;
+&#13;
+!2 Description&#13;
+* Currently, all Jenkins Jobs are implemented using the interface of Jenkins itself (not Jenkins Pipeline)&#13;
+* Using the Jenkins Pipeline, it is more clear what is done when, and is easier to maintain because the script can be written offline&#13;
+&#13;
+!2 Steps&#13;
+* Investigate how Jenkins Pipeline works exactly and which benefits there would result from</description>
+        </task>
+        <task id="19902">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Prepare go-live and configurations</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Prepare go-live and configurations&#13;
+!! Description&#13;
+* The productive system (ftpp-prd) has been prepared ready for live clinical releases ([TASK:19762])&#13;
+* The configuration is not ready for first clinical release&#13;
+&#13;
+!! Steps&#13;
+* Review configuration and other settings ready to clinical go-live</description>
+        </task>
+        <task id="19903">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Refactor entity class</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Refactor entity class&#13;
+* Entity class has grown large and needs refactoring</description>
+        </task>
+        <task id="20296">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">2</field>
+                <field title="Summary">Migration SVN to git</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!1 Migration SVN to git&#13;
+&#13;
+git &gt; SVN&#13;
+&#13;
+!! separate passwords/credentials/docker-compose.ymls from codebase before migration</description>
+        </task>
+        <task id="19320">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Rebuild VTK for startup speed (part 2)</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">Rebuild VTK for startup speed (part 2)</description>
+        </task>
+        <task id="19919">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">quick access through web-application</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!quick access through web-application</description>
+        </task>
+        <task id="20621">
+            <fields>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Refactor Navigator Trees</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Technical</field>
+                <field title="Sprint"/>
+            </fields>
+            <description format="W">!!!Refactor NavigatorTrees&#13;
+Navigator trees (for planning, comparison, etc perspective), their selection listeners and comparators have become quite cumbersome. Refactoring required</description>
+        </task>
+    </tracker>
+</root>

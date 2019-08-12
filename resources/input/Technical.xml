@@ -1,0 +1,39 @@
+<root>
+	<tracker id="304695" name="PBI" project="CPT_FTPP">
+		<task id="21230">
+			<fields>
+				<field title="Parent" />
+				<field title="Priority">8</field>
+				<field title="Summary">Create PresentationContext-Class tailored to each
+					Perspective</field>
+				<field title="Status">Accepted</field>
+				<field title="Severity" />
+				<field title="Resolution" />
+				<field title="Category">Technical</field>
+				<field title="Sprint" />
+			</fields>
+			<description format="W">!Create PresentationContext-Class
+				tailored to each Perspective&#13;
+				* define a class specifically for each perspective&#13;
+				* avoid inheritence : composition over inheritence&#13;
+				* create perspective specific listeners&#13;
+				* Newly created PresentationContext classes are instantiated and
+				assigned to a Perspective in PerspectiveHelper
+			</description>
+		</task>
+		<task id="21231">
+			<fields>
+				<field title="Parent" />
+				<field title="Priority">9</field>
+				<field title="Summary">some other summary</field>
+				<field title="Status">refined</field>
+				<field title="Severity" />
+				<field title="Resolution" />
+				<field title="Category">Technical</field>
+				<field title="Sprint" />
+			</fields>
+			<description format="W">bla bla blup
+			</description>
+		</task>
+	</tracker>
+</root>
