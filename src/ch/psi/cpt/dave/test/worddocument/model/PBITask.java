@@ -1,7 +1,7 @@
 package ch.psi.cpt.dave.test.worddocument.model;
 
 public class PBITask {
-	private String parent; 
+	private String id; 
 	private int priority;
 	private String summary;
 	private String status;
@@ -11,9 +11,9 @@ public class PBITask {
 	
 	private String description;
 
-	public PBITask(String parent, int priority, String summary, String status, String resolution,
+	public PBITask(String id, int priority, String summary, String status, String resolution,
 			String category, String sprint, String description) {
-		this.parent = parent;
+		this.id = id;
 		this.priority = priority;
 		this.summary = summary;
 		this.status = status;
@@ -23,8 +23,8 @@ public class PBITask {
 		this.description = description;
 	}
 
-	public String getParent() {
-		return parent;
+	public String getID() {
+		return id;
 	}
 
 	public int getPriority() {
@@ -57,7 +57,7 @@ public class PBITask {
 
 	@Override
 	public String toString() {
-		return "PBITask [parent=" + parent + ", priority=" + priority + ", summary=" + summary + ", status=" + status
+		return "PBITask [parent=" + id + ", priority=" + priority + ", summary=" + summary + ", status=" + status
 				+ ", resolution=" + resolution + ", category=" + category + ", sprint=" + sprint + ", description="
 				+ description + "]";
 	}

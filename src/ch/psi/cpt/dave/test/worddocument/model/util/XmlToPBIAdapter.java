@@ -17,20 +17,19 @@ public class XmlToPBIAdapter {
 
 		if (xmlExportedRoot.getTracker().name.equals("PBI")) {
 
-			List<PBITask> pBIs = new ArrayList<PBITask>();
 			for (Task task : tasks) {
 				System.out.println(task.getId());
 				PBITask newTask = fieldsToPBI(task);
 				System.out.println(newTask.toString());
-				pBIs.add(newTask);
+				resultPBIs.add(newTask);
 			}
 		}
-
 		return resultPBIs;
 	}
 
 	private PBITask fieldsToPBI(Task task) {
-		String parent = null;
+		
+		String id = task.id;
 		int priority = 0;
 		String summary = null;
 		String status = null;
@@ -41,9 +40,7 @@ public class XmlToPBIAdapter {
 		for (Field f : task.fields.getFields()) {
 			String key = f.title;
 			String value = f.value;
-			if (key.equalsIgnoreCase("Parent")) {
-				parent = value;
-			} else if (key.equalsIgnoreCase("Priority")) {
+			if (key.equalsIgnoreCase("Priority")) {
 				System.out.println(value);
 				priority = Integer.parseInt(value);
 			} else if (key.equalsIgnoreCase("Summary")) {
@@ -59,7 +56,7 @@ public class XmlToPBIAdapter {
 			}
 		}
 
-		return new PBITask(parent, priority, summary, status, resolution, category, sprint, task.description.value);
+		return new PBITask(id, priority, summary, status, resolution, category, sprint, task.description.value);
 	}
 
 }
