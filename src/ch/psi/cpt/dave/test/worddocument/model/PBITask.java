@@ -5,20 +5,18 @@ public class PBITask {
 	private int priority;
 	private String summary;
 	private String status;
-	private String severity;
 	private String resolution;
 	private String category;
 	private String sprint;  
 	
 	private String description;
 
-	public PBITask(String parent, int priority, String summary, String status, String severity, String resolution,
+	public PBITask(String parent, int priority, String summary, String status, String resolution,
 			String category, String sprint, String description) {
 		this.parent = parent;
 		this.priority = priority;
 		this.summary = summary;
 		this.status = status;
-		this.severity = severity;
 		this.resolution = resolution;
 		this.category = category;
 		this.sprint = sprint;
@@ -41,10 +39,6 @@ public class PBITask {
 		return status;
 	}
 
-	public String getSeverity() {
-		return severity;
-	}
-
 	public String getResolution() {
 		return resolution;
 	}
@@ -60,7 +54,11 @@ public class PBITask {
 	public String getDescription() {
 		return description;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "PBITask [parent=" + parent + ", priority=" + priority + ", summary=" + summary + ", status=" + status
+				+ ", resolution=" + resolution + ", category=" + category + ", sprint=" + sprint + ", description="
+				+ description + "]";
+	}
 }

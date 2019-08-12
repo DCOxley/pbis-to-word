@@ -10,6 +10,9 @@ public class Tracker {
 	@XmlAttribute
 	public String id;
 
+	@XmlAttribute
+	public String name;
+	
 	public String getId() {
 		return id;
 	}
