@@ -1,0 +1,2499 @@
+<root>
+    <tracker id="304695" name="PBI" project="CPT_FTPP">
+        <task id="20361">
+            <fields>
+                <field title="ID">20361</field>
+                <field title="Parent"/>
+                <field title="Priority">9</field>
+                <field title="Summary">Administrator perspective</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Nov 07 2018 09:48</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 23 2019 17:31</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Administrator perspective&#13;
+* CT calibration curve administration&#13;
+* CT curve import parameters, tube current, kilo voltage etc.&#13;
+* CT maximum QA checks administration&#13;
+* correction for metal (?)&#13;
+* CT offset transformation administration&#13;
+* Beam data administration&#13;
+* Beam line administration e.g. preabsorber&#13;
+* user administration&#13;
+* Adjust tolerances on verification results&#13;
+* Input entry limits e.g. gantry angle, couch, CT etc&#13;
+* Couch administration&#13;
+* CT device administration&#13;
+* Algorithm default calculation parameters&#13;
+* Minimum / maximum spot weight</description>
+        </task>
+        <task id="20743">
+            <fields>
+                <field title="ID">20743</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Tests in live system for Test patient and Patbase, GPPS, SFGen, with power users</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Feb 19 2019 14:01</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 12 2019 08:56</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Tests in live system for Test patient and Patbase, GPPS, SFGen, with power Users</description>
+        </task>
+        <task id="21201">
+            <fields>
+                <field title="ID">21201</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Add ability to copy and rename (ID) a patient</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 26 2019 10:23</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 02 2019 13:47</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Add ability to copy and rename (ID) a patient&#13;
+* In Load Patient perspective,&#13;
+* Right-click on a patient&#13;
+* Should open a mask or wizard to copy a patient.&#13;
+&#13;
+!2 create copy of patient wizard&#13;
+* User enters new ID.&#13;
+* Push button to check ID.&#13;
+** push button is to avoid querying whole database after typing one letter.&#13;
+** other ideas welcome&#13;
+* First letter P illegal as an ID.&#13;
+* IDs should conform to 1 letter 5 number convention (to start with)&#13;
+&#13;
+!2 Actions on check button&#13;
+* Is ID pattern conform ? Only proceed if yes.&#13;
+* Does ID already exist ? Only proceed if no.&#13;
+&#13;
+!2 Potential options&#13;
+* (compare e.g. dicom converter)&#13;
+* select depth of patient to copy&#13;
+* copy individual planning data sets&#13;
+* structures with data sets&#13;
+* planning data sets, structures and plans&#13;
+* copy whole patient.&#13;
+* Only planning information can be copied.&#13;
+&#13;
+!2 Out of scope&#13;
+* Cannot copy connections to surrouding systems.&#13;
+* e.g. cannot copy an assigned treatment in patbase&#13;
+* cannot copy steering files.&#13;
+* Merge of patients.&#13;
+* replace of patients.&#13;
+* No further at this point.&#13;
+&#13;
+[!CopyingPatientWizard.png]</description>
+        </task>
+        <task id="21223">
+            <fields>
+                <field title="ID">21223</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Profile for Hounsfield Unit display</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 01 2019 14:55</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 08 2019 16:47</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Profile for Hounsfield Unit display&#13;
+* same as for dose, but with Hounsfield unit&#13;
+* profile tool which can be dragged through slice view&#13;
+* plot window pops up and shows hounsfied unit.&#13;
+* can plot window perhaps toggle between which distribution to show.&#13;
+*</description>
+        </task>
+        <task id="21235">
+            <fields>
+                <field title="ID">21235</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Patient Export  / Dicom RTIONPLAN</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 04 2019 13:50</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 14 2019 17:29</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Patient Export  / Dicom RTIONPLAN&#13;
+&#13;
+!2 User Interface&#13;
+* Move menu option : __Patient&gt; Export &gt; To Filesystem ...__ --&gt; opens a new wizard&#13;
+* Drop anonymise option for now&#13;
+* After finish user selects a folder&#13;
+* PatientID_Date_Timestamp.zip written to folder&#13;
+* Dicom files zipped into folders . One folder for each planning data set.&#13;
+* User seletcs which objects to export&#13;
+* Tree always includes 'upstream' objects.&#13;
+[!DicomExport.png]</description>
+        </task>
+        <task id="21283">
+            <fields>
+                <field title="ID">21283</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Voxel Information</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 22 2019 17:13</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 20 2019 16:53</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Voxel Information&#13;
+* implement a "voxel picker" tool to show the content of a voxel .&#13;
+** Hounsfield unit&#13;
+** Dose value&#13;
+** structures to which voxel is part of (?)&#13;
+** any Hounsfield unit overrides?</description>
+        </task>
+        <task id="21330">
+            <fields>
+                <field title="ID">21330</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Display coordinate transformations RTAdmin</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 06 2019 14:49</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 08 2019 15:02</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Display coordinate transformations RTAdmin&#13;
+* display coordinate transformations / offsets in RT Admin</description>
+        </task>
+        <task id="21334">
+            <fields>
+                <field title="ID">21334</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Better information when no state available from button patbase</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 06 2019 15:01</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 06 2019 15:01</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Better information when no state available from button patbase&#13;
+* if no state found from patbase , client shows 'failed!'&#13;
+* sometimes it has not failed, but there is actually no state.&#13;
+* improve this information.</description>
+        </task>
+        <task id="21335">
+            <fields>
+                <field title="ID">21335</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Patbase Dose not 0.0 when no value is found</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 06 2019 15:02</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 08 2019 14:28</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Patbase Dose not 0.0 when no value is found&#13;
+* patbase dose shows 0.0 if no value found.&#13;
+* value not available should be different from 0.0.&#13;
+* if patbase is down, do not expecte value to drop to zero.</description>
+        </task>
+        <task id="21376">
+            <fields>
+                <field title="ID">21376</field>
+                <field title="Parent"/>
+                <field title="Priority">8</field>
+                <field title="Summary">Ability to define a plan quicker</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 20 2019 16:53</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 20 2019 16:53</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Ability to define a plan quicker</description>
+        </task>
+        <task id="19310">
+            <fields>
+                <field title="ID">19310</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Define roles as collection of permissions</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 03 2018 10:22</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 31 2019 11:22</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Define roles as collection of permissions&#13;
+* Expand system to include a wider set of permissions&#13;
+* An explicit list of these permissions needs to be defined&#13;
+** __Start with__: Plan approval, treatment approval, CT transformation approval, Contour approval&#13;
+* Explicitly separate permissions from roles.&#13;
+* __Permission :__ the allowance to perform a certain operation&#13;
+* __Role :__ properties of a user who has certain permissions&#13;
+&#13;
+!2 Example of the permission - role table&#13;
+* In the admin perspective&#13;
+|| Permission || Radiation Oncologist  || Medical Physicist || Operational Physicist || New Role (+)&#13;
+| Contour approval | (/) | (x) | (x) | -&#13;
+| Plan Approval | (/)  | (/) | (x) | -&#13;
+| CT Transformation Approval | (/)  | (/) | (x) | -&#13;
+| Treatment Approval | (x) | (/) | (x) | -</description>
+        </task>
+        <task id="19440">
+            <fields>
+                <field title="ID">19440</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Copy plan does not copy constraints</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 24 2018 10:21</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 02 2019 16:27</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Copy plan does not copy constraints</description>
+        </task>
+        <task id="19882">
+            <fields>
+                <field title="ID">19882</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Expand the field properties display</field>
+                <field title="Status">Accepted</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 20 2018 11:19</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 04 2019 10:27</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Expand the field properties display&#13;
+* The field properties display in the context sensitive section needs to be expanded.&#13;
+* Properties should appear in a new window&#13;
+** gantry angle (deg), couch angle (deg)&#13;
+** field centre (cm)&#13;
+** pool&#13;
+** nozzle extraction (cm)&#13;
+** estimated airgap (cm)&#13;
+** Target (by label)&#13;
+excluding zero weighted spots:&#13;
+* number of energy layers&#13;
+* minimum and maximum energy (MeV)&#13;
+* range of minimum and maximum energy (cm)&#13;
+* the total number of spots&#13;
+* highest and lowest weighted spots&#13;
+* Delta U (cm) , Delta T (cm)&#13;
+* Umin, Umax (cm) and Tmin, Tmax (cm)</description>
+        </task>
+        <task id="20635">
+            <fields>
+                <field title="ID">20635</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Invalidation rule set for partially applied treatments</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jan 14 2019 15:57</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jan 14 2019 15:57</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Invalidation rule set for partially applied treatments</description>
+        </task>
+        <task id="20801">
+            <fields>
+                <field title="ID">20801</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Cache (beam) data on GPU server</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Mar 06 2019 11:07</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 03 2019 13:09</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Cache (beam) data on GPU server&#13;
+* depth dose curves&#13;
+* phase space&#13;
+* (ct data ) further step&#13;
+*</description>
+        </task>
+        <task id="20927">
+            <fields>
+                <field title="ID">20927</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Provide versioning for beamdata to each calculation</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Apr 02 2019 13:39</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 09 2019 13:20</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Provide versioning for beamdata to each calculation&#13;
+* each calculation needs to know which beamdata it was originally calculated with regardless of the current version</description>
+        </task>
+        <task id="20963">
+            <fields>
+                <field title="ID">20963</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Abolute Dosimetry changes</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Apr 10 2019 14:52</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 10 2019 15:37</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Abolute Dosimetry changes</description>
+        </task>
+        <task id="21054">
+            <fields>
+                <field title="ID">21054</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Synchronise treatment definition UI with current scalar dose value</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 10 2019 16:56</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 10 2019 16:56</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Synchronise treatment definition UI with current scalar dose value</description>
+        </task>
+        <task id="21114">
+            <fields>
+                <field title="ID">21114</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Decide whether to Copy optimisation group and constraints when copying plans</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 28 2019 11:10</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 28 2019 11:10</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Decide whether to Copy optimisation group and constraints when copying plans&#13;
+* The best approach when copying a plan is unclear.&#13;
+* One can either copy the plan with its optimisation group and its contraints&#13;
+* or not.&#13;
+\\&#13;
+* IF the optimisation group and constraints __ARE__ copied,&#13;
+* THEN one must decide how to handle the scenario when the structures do not exist in the copy destination&#13;
+* THEN one must understand how to handle the scenario when the structures are present in name, but their content has been modified.&#13;
+* THEN, one must decide how to add a plan with no optimisation group to a treatment for replanning evaluations&#13;
+\\&#13;
+*IF the optimisation group is not copied,&#13;
+* THEN this effects the users feedback on this topic. They are asking for a copy of all plan related parameters</description>
+        </task>
+        <task id="21115">
+            <fields>
+                <field title="ID">21115</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Document Structure operations</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 28 2019 12:41</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 28 2019 12:41</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Document Structure operations&#13;
+* divide&#13;
+* center&#13;
+* others</description>
+        </task>
+        <task id="21177">
+            <fields>
+                <field title="ID">21177</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Contour specific HU information</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 19 2019 14:19</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 26 2019 11:18</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!Contour specific HU information</description>
+        </task>
+        <task id="21184">
+            <fields>
+                <field title="ID">21184</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Handle conflicting Hounsfield Unit overrides</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 19 2019 16:04</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 19 2019 16:30</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Handle conflicting Hounsfield Unit overrides&#13;
+* How should conflicting hounsfield unit overrides be handled?&#13;
+* Two possibilities : ordering or arithmetic operations&#13;
+&#13;
+!2 Ordering Hounsfield Unit overrides&#13;
+* Housfield unit overrides can be ordered using a UI sortable list to show which override should take priority in a conflicting situation&#13;
+!3 disadvantages&#13;
+* less clear to user what is assigned&#13;
+* potentially more arithmetic work to assign HU&#13;
+&#13;
+!2 Arithmetic overrides&#13;
+* Arithmetic unions and differences could be used to resolve conflicts .&#13;
+* in that way priorities are not needed&#13;
+!3 disadvantages&#13;
+* who checks for conflicts ? user or system?&#13;
+* more work for user to define contours&#13;
+* "Tills boundary problem"?</description>
+        </task>
+        <task id="21202">
+            <fields>
+                <field title="ID">21202</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Pull patient from different FTPP instance (tst to dev and so on)</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 26 2019 10:25</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 26 2019 10:49</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Pull patient from different FTPP instance (tst to dev and so on)</description>
+        </task>
+        <task id="21359">
+            <fields>
+                <field title="ID">21359</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Implement Table Sort on Strucutre statistics table</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 16 2019 10:05</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 16 2019 10:05</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Implement Table Sort on Strucutre statistics table&#13;
+* sort structures by columns.</description>
+        </task>
+        <task id="21363">
+            <fields>
+                <field title="ID">21363</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Improve colour map management</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 16 2019 11:01</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 16 2019 11:01</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Improve colour map management&#13;
+* not so good at moment. counterintuitive. improve.</description>
+        </task>
+        <task id="19315">
+            <fields>
+                <field title="ID">19315</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Commissioning Document</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 03 2018 10:53</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 14 2018 15:59</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Commissioning Document</description>
+        </task>
+        <task id="19316">
+            <fields>
+                <field title="ID">19316</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Define Commissioning Tests without beam</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 03 2018 10:53</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Nov 14 2018 16:08</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Define Commissioning Tests without beam</description>
+        </task>
+        <task id="19492">
+            <fields>
+                <field title="ID">19492</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Availability monitoring of necessary services and fail-safety handling</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 06 2018 10:36</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 15 2019 18:29</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Availability monitoring of necessary services and fail-safety handling&#13;
+* traffic light style system showing status in client&#13;
+* server-side stable connection&#13;
+* file system available and storage capacity&#13;
+* GPU calculation server&#13;
+* Velocity</description>
+        </task>
+        <task id="19596">
+            <fields>
+                <field title="ID">19596</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Lock cross hairs across view parts</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 29 2018 10:42</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 25 2019 10:27</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Lock cross hairs across view parts&#13;
+* cross hairs can be displayed across views.&#13;
+* There is currently no correlation between the cross hairs.&#13;
+* Implement ability to show cross hairs on all views in one click .&#13;
+* synchronise cross hairs across views. *where UI?*&#13;
+&#13;
+!2 Notes&#13;
+* Menu item in View Menu labelled "Lock Cross hairs" which can be ticked or unticked.&#13;
+* when ticked cross hair turns on in all views and is "locked"&#13;
+* locked means the cross hair moves together across all views.&#13;
+* can then be unlocked unticking the "Lock Cross Hairs" button.&#13;
+* the 'locking' does not effect the display.&#13;
+* displaying cross hairs remains a separate operation</description>
+        </task>
+        <task id="19668">
+            <fields>
+                <field title="ID">19668</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">logfile analysis tools</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 10 2018 14:41</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Dec 07 2018 14:48</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Logfile Analysis Tools&#13;
+* Show results from a logfile analysis.&#13;
+** Max Dose (%)&#13;
+** Mean Dose (%)&#13;
+** Minimum Dose (%)&#13;
+** Pass rate from matlab script&#13;
+** Pass rate adjustable by user&#13;
+** Dose Differences (/)&#13;
+** Profiles (Are profiles necessary in dose distributions?)&#13;
+** figure export</description>
+        </task>
+        <task id="19673">
+            <fields>
+                <field title="ID">19673</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Prescription does not stay assigned to a plan</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 11 2018 08:46</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 02 2019 14:54</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Prescription does not stay assigned to a plan&#13;
+* When a plan is assigned a prescription in the Optimise window,&#13;
+* Then then plan is optimised via the finish button.&#13;
+* The prescription is not kept by the plan.&#13;
+&#13;
+!! Steps&#13;
+# Create a plan with field(s)&#13;
+# Create a prescription&#13;
+# Right click on the plan . 'Optimise'&#13;
+# Assign the plan a prescription in top drop down bar&#13;
+# Optimise plan 'Finish'&#13;
+# Save&#13;
+# Right click on plan 'Optimise'&#13;
+# Plan is unaware of prescription</description>
+        </task>
+        <task id="19817">
+            <fields>
+                <field title="ID">19817</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Lock coordinate system</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 10 2018 16:19</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 04 2018 15:03</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Lock coordinate system</description>
+        </task>
+        <task id="19843">
+            <fields>
+                <field title="ID">19843</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Add a check whether a plan fraction dose agrees with prescription fraction dose</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 15 2018 10:11</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 14 2018 16:27</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Add a check whether a plan fraction dose agrees with prescription fraction dose&#13;
+* when locking a plan which has an assigned prescription,&#13;
+* the system should check if the fraction doses between plan and prescription agree</description>
+        </task>
+        <task id="19870">
+            <fields>
+                <field title="ID">19870</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Dicom import needs to be able to maintain registration of several series</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 17 2018 16:09</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 03 2019 12:50</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Dicom import needs to be able to maintain registration of several series&#13;
+!2 Introduction&#13;
+* when importing CTs from Velocity, FTPP needs to be able to maintain a registration of series' to each other&#13;
+* The registration will be a rigid registration with six degrees of freedom. Three translational, three rotational.&#13;
+* search for CTs using Patient ID , name , date or other existing search parameters&#13;
+!2 Workflow&#13;
+* for more detailed steps see [word document|DOC:320274]&#13;
+* User has the first series imported already&#13;
+* This first series will be under treatment&#13;
+* Based on decision from Radiation Oncologist, an evaluation CT will be imported for dose recomputation&#13;
+!3 Option 1&#13;
+* right-click on a planning data set&#13;
+* "imported registered CTs"&#13;
+* query velocity for CTs with patient ID which have registrations to this CT&#13;
+* import CT, shifted and rotated by this registration.&#13;
+* automatically display that this is an "evaluation CT" and cannot be used to steering files. (icon)&#13;
+&#13;
+!3 Option 2&#13;
+* Two - step image set import page , first select a CT&#13;
+* second page shows its imports then display its registrations etc.&#13;
+&#13;
+!2 Technical details&#13;
+* get registration information from velocity. Is this possible ?&#13;
+* is this feasible?&#13;
+* This may require a technical spike (?)&#13;
+!2 Example Case: P18901&#13;
+* Patient P18901 has a planning CT from 18th December 2018 which is registered with a number of other imaging sets.&#13;
+* A registration entitled "f" has been published in velocity&#13;
+* according to Velocity it has the following matrix applied.&#13;
+[{Table&#13;
+&#13;
+||&#13;
+||Translations (in mm)&#13;
+||Rotations (in degrees)&#13;
+&#13;
+|__x__&#13;
+|1.65&#13;
+|-1.311&#13;
+&#13;
+|__y__&#13;
+|-0.10&#13;
+|0.377&#13;
+&#13;
+|__z__&#13;
+|3.69&#13;
+|0.310&#13;
+}]&#13;
+* Example data is available [here|DOC:320338]&#13;
+!2 Example Case : P19018&#13;
+* Evaluation CT from 05.02.2019&#13;
+* Replanning CT from 26.02.2019&#13;
+!2 Observations:&#13;
+* The values displayed in velocity are the shifts of and rotations relative to the selected rotation center&#13;
+* The DICOM objects contains rotations relative to and shifts of the origin (0/0/0)&#13;
+* Use the following tags to find involved CT sets:&#13;
+**  __ReferencedSeriesSequence -&gt; SeriesInstanceUID__ refers to the planning CT series&#13;
+** __StudiesContainingOtherReferencedInstancesSequence -&gt; ReferencedSeriesSequence -&gt; SeriesInstanceUID__ refers to the evaluation CT series&#13;
+* __RegistrationSequence__ contains two entries&#13;
+** 1st entry:&#13;
+*** __ReferencedImagesSequence -&gt; FrameOfReferenceUID__ refering to the evaluation CT&#13;
+***__MatrixRegistrationSequence -&gt; MatrixSequence -&gt; FrameOfReferenceTransformationMatrix__ containing the 4x4  transformation matrix from the evaluation CT to the planning CT&#13;
+** 2nd entry:&#13;
+*** __ReferencedImagesSequence -&gt; FrameOfReferenceUID__ refering to the planning CT&#13;
+***__MatrixRegistrationSequence -&gt; MatrixSequence -&gt; FrameOfReferenceTransformationMatrix__ containing the 4x4  identity matrix&#13;
+&#13;
+!2 Import registered CT:&#13;
+* Use __vtkImageReslice__ and __vtkTransform__ to perform CT resampling/shifting (cf.VtkDoseUtils.interpolate(...))&#13;
+&#13;
+!2 Structures&#13;
+* Determine if structure import with registration is required. If so, reslicing of structures along the z planes should be performed!</description>
+        </task>
+        <task id="19898">
+            <fields>
+                <field title="ID">19898</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Provide an alternative to the INFO file</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 22 2018 13:29</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 02 2019 16:31</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Provide an alternative to the INFO file</description>
+        </task>
+        <task id="19948">
+            <fields>
+                <field title="ID">19948</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Make read-only patient opening accessible via right-click menu</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Sep 04 2018 16:55</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 10 2019 14:44</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Make read-only patient opening accessible via right-click menu&#13;
+* In the __Patient Load__ perspective, right-click on a patient and a menu should appear offering to open the patient in a read-only mode.&#13;
+* The patient should then still be available for other users to lock&#13;
+* The current user should not be able to modify any parameters of the patient.&#13;
+* Live-updates should appear if another user modifies contents of the patient.</description>
+        </task>
+        <task id="20234">
+            <fields>
+                <field title="ID">20234</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Display inconsistency of treatment definition between FTPP and Patbase</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Oct 12 2018 15:50</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 10 2019 17:03</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Display inconsistency of treatment definition between FTPP and Patbase&#13;
+* It is possible to create an inconsistency between the treatment definition which is assigned in patbase and the one which is saved in FTPP&#13;
+* FTPP should catch such inconsistencies and make the user aware of the problem&#13;
+* Further refinement needed.&#13;
+&#13;
+!! Options&#13;
+! Option 1 : __Psiplan approach__ - Prevent closure of application when there are unassigend changes&#13;
+* Support a deassign button&#13;
+* Get current treatment dose from patbase&#13;
+* Allow changes which do not contradict current treatment dose&#13;
+* Re-assign&#13;
+* Only accept changes which are consistent with current treatment dose&#13;
+* Other changes overwrite current treatment model in patbase&#13;
+* Application cannot be closed if unassigned changes are present.&#13;
+* Changes can either be reverted to patbase state or changes can be assigned.&#13;
+* (?) What happens if application crashes&#13;
+&#13;
+&#13;
+! Option 2 : __Automatic assign pre-step__ - Merge assign into an implicit pre-step of steering file evolution&#13;
+* No assign / deassign button&#13;
+* Current treatment model is assigend automatically when steering files are created (in a pre-step)&#13;
+* (?) How to handle assign of a second series ? With new generation of steering files&#13;
+* (?) How to handle change of an existing series? (Get current treatment dose?)&#13;
+* (x) %%red __Rule out this option (for now). not easy for user to solve problems if there is a reason the treatment cannot be assigned__&#13;
+&#13;
+! Option 3:  - Request information full treatment model from Patbase&#13;
+* FTPP workspace completely populated from information from Patbase&#13;
+* Information solely in Patbase : strip down FTPP model&#13;
+* expand patbase interface to support this functionality (services need to be defined)&#13;
+* (!) Tight coupling of the two systems&#13;
+&#13;
+! Option 4: __FTPP treatment definition approval and Patbase assignment are linked__&#13;
+* Patbase assign when treatment definition is locked (approved?)&#13;
+* Patbase unassign when treatment definition is unlocked&#13;
+&#13;
+!!Open Questions&#13;
+* What happens to pdf reports when an existing treatment is edited?&#13;
+* When should FTPP save the changes (on assign/on user action)?</description>
+        </task>
+        <task id="20404">
+            <fields>
+                <field title="ID">20404</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Seperate clean up of optimisation constraints from clean up of field</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Nov 14 2018 15:11</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Nov 14 2018 15:11</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Seperate clean up of optimisation constraints from clean up of field&#13;
+* Change behaviour so that a change in the target and/or field does not invalidate the planning work or setting constraints and priorities&#13;
+* Should allow a user to slightly change e.g. field direction and keep all the optimisation settings and simply re-optimise the plan</description>
+        </task>
+        <task id="20415">
+            <fields>
+                <field title="ID">20415</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Improve opening of patient</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Nov 15 2018 13:04</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 03 2019 14:28</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Improve opening of patient&#13;
+* Streamline the opening of a patient to allow user to only load the data they actually want to work with&#13;
+* Select which planning data set(s) and which plan (s)&#13;
+* Also allow to not select any data , for the cases when the user wants to go straight to e.g. treatment definition.</description>
+        </task>
+        <task id="20434">
+            <fields>
+                <field title="ID">20434</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Coordinate system change should either be cleaned up or be separate for each series</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Nov 20 2018 10:49</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 09 2019 13:21</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Coordinate system change should either be cleaned up or be separate for each series&#13;
+* potentially separate coordinate system transformations onto individual series&#13;
+* alternatively keep them on planning data set and make connection visible&#13;
+* discuss with power users what is more useful to them&#13;
+* offer possibility to copy coordinate system transformation from an existing series in same planning data set</description>
+        </task>
+        <task id="20463">
+            <fields>
+                <field title="ID">20463</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Prompt user with automatically assigned CT calibration curve</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Nov 22 2018 16:25</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 19 2019 15:49</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Prompt user with automatically assigned CT calibration curve&#13;
+* when a CT is imported , the user should be offered the most sensible, approved, calibration curve depending on the protocoll used in the CT acquisition&#13;
+* This would be the option set as default, but the user can choose to override this&#13;
+* The user should be able to assign any curve to any image set&#13;
+* The user must acknowledge with authentification that they are doing this</description>
+        </task>
+        <task id="20485">
+            <fields>
+                <field title="ID">20485</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Beam Data Generation Module</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Nov 30 2018 10:19</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 31 2019 14:31</field>
+                <field title="Modified by">meier_g</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Beam Data Generation Module&#13;
+* new model implemented from dosimetry project 2019&#13;
+* further changes to be defined&#13;
+\\&#13;
+!2 Notes&#13;
+* flexible beam data generation codes&#13;
+* TPS calibration based on dose area product per MU&#13;
+* change input to TPS file&#13;
+&#13;
+!2 Integrated beam data generation module&#13;
+* Generation of depth dose curves&#13;
+* Receive measured depth dose curves DDC normalized to Dose-Area-Product per MU. [[ Gy cm2 / MU]&#13;
+* Generate and export Beam data for FTPP / G2.&#13;
+!3 Requirements&#13;
+* must handle arbitrary energies e.g. every 10 MeV&#13;
+* must handle discontinous energies and unevenly spaced energies&#13;
+* must handle variations in resolution along depth dose curve&#13;
+* must be able to perform a spline interpolation&#13;
+* must be able to interpolate between energies&#13;
+!3 Preparatory steps&#13;
+* mock [[ Gy/MU ] curves using SFGen conversion factor, use [[ Gy/MU ] curves in setup&#13;
+* change Optimization and dose display classes for absolute dose&#13;
+* if possible, mock new beam phase space representation (beamline, nozzle, absorber) and set in setup&#13;
+* Change dose/dij calculation classes to handle new phasespace model&#13;
+!3 Questions&#13;
+* How to handle dose color maps?&#13;
+* Absolute dose in [[Gy], [[Gy RBE] or both options&#13;
+Note:&#13;
+Further information needed.</description>
+        </task>
+        <task id="20502">
+            <fields>
+                <field title="ID">20502</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Prepare Verification with shifted Airgap</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Dec 04 2018 14:20</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 03 2019 09:12</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Prepare Verification with shifted Airgap&#13;
+&#13;
+!2 Procedure&#13;
+* For a step by step description see the attached file</description>
+        </task>
+        <task id="20508">
+            <fields>
+                <field title="ID">20508</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Verification results table</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Dec 05 2018 10:18</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Feb 01 2019 11:37</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Verification results table&#13;
+* FTPP will provide a table with a row entry per field.&#13;
+* The columns will be used to enter the result parameters.&#13;
+* The numbers or backgrounds should change colour when the results are out of tolerance.&#13;
+* Specific tolerances are listed below in the tolerances section.&#13;
+* The columns are "U Shift ( mm ) ", "T Shift (mm)", "Gamma result 3mm, 3% (%)", "Best Boosting Factor ", "Comment"&#13;
+* The user enters the values in the table by hand for now and can save the values.&#13;
+[!VerificationTable.png]&#13;
+&#13;
+!2 Tolerances&#13;
+|| Value || Tolerance Level 1 (Yellow) || Tolerance Level 2 (red)&#13;
+|Gamma result | none | &lt;90.0%&#13;
+| Best Boosting Factor | +/- 1.02 | &gt; abs(1.02)&#13;
+&#13;
+* Tolerances should be configurable for easy changes. In a first release potentially by a developer, eventually in an [ admin workspace | TASK:20361].</description>
+        </task>
+        <task id="20669">
+            <fields>
+                <field title="ID">20669</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">IEC 62083 Compliance</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jan 28 2019 10:41</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Mar 20 2019 10:52</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1IEC 62083 Compliance&#13;
+&#13;
+!2 Accompanying documents&#13;
+* Technical document&#13;
+* Instructions for use&#13;
+&#13;
+!2 Genereal requirments for operational safety&#13;
+* distances on in cms or mms&#13;
+* angles always degrees&#13;
+* radiation dose in SI, always labelled&#13;
+* Display of time and date&#13;
+* Login for CPT only&#13;
+* Roles and permissions for differnt operations&#13;
+* copy protection&#13;
+* virus protection&#13;
+* Data entry limits everywhere&#13;
+* correctness of data transfer&#13;
+* coordinate systems and sclaes according to IEC 61217&#13;
+* saving and archiving data&#13;
+&#13;
+!2 Equipment modelling&#13;
+!3 Describe equipment model&#13;
+* radiation quality&#13;
+* nominaal energy&#13;
+* absorbed dose profiles (applicable to us?)&#13;
+* depth dose curves&#13;
+\\&#13;
+* available ranges of beam limiting devices, gantry angles , geometric factors etc.&#13;
+&#13;
+!3 Brachytherapy&#13;
+* not applicable for us&#13;
+&#13;
+!3 Dosimetric information&#13;
+!3 Equipment model acceptance&#13;
+!3 Equipment model deletion&#13;
+&#13;
+&#13;
+!2 Anatomy modelling&#13;
+!3 Data acquisition&#13;
+* import checks which could be performed&#13;
+&#13;
+!3 Coordinate systems and scales&#13;
+* Follow convention ICRU 42&#13;
+* illustration of coordinate system in instructions for use manual&#13;
+* dimensions , coordinates, left right&#13;
+&#13;
+!3 Contouring regions of interest&#13;
+!3 Patient anatomy model acceptance&#13;
+!3 patient anatomy model deletion&#13;
+&#13;
+!2 Treatment planning&#13;
+!3 General requirements&#13;
+!3 Treatment planning preparation&#13;
+!3 Treatment plan identification&#13;
+!3 Treatment plan deletion&#13;
+!3 Electronic use&#13;
+* login signature -- described in instructions for use&#13;
+&#13;
+!2 Absorbed dose distribution calculation&#13;
+!3 Algorithms used&#13;
+!3 accuracy of algorithms&#13;
+&#13;
+!2 Treatment plan reporting&#13;
+!3 incomplete treatment plan report&#13;
+!3 information on the treatment plan report&#13;
+!3 Transmitted treatment plan information&#13;
+&#13;
+&#13;
+!2 General Hardware diagnostics&#13;
+* start up checks&#13;
+!2 Data and code&#13;
+* hashchecks&#13;
+&#13;
+!2 Human errors in software design&#13;
+* IEC 62304 , risk analysis&#13;
+* means to report errors&#13;
+&#13;
+!2 Change in software versions&#13;
+* how to install in instructions for use&#13;
+!2 Use errors&#13;
+*Comply IEC 62366</description>
+        </task>
+        <task id="20680">
+            <fields>
+                <field title="ID">20680</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">"Customer" Acceptance Tests</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jan 30 2019 12:43</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Mar 20 2019 10:52</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 "Customer" Acceptance Tests&#13;
+&#13;
+!2 Test of interfaces&#13;
+!3 Velocity / Dicom&#13;
+* Import of CT data&#13;
+* Import of structures&#13;
+* Export DRR to Velocity&#13;
+&#13;
+!3 User Space File system&#13;
+* Import from File system&#13;
+* Export to file system (verification dose distributions)&#13;
+&#13;
+!3 FTPP internal file system&#13;
+&#13;
+!3 SFGen&#13;
+* create steering file&#13;
+* boost steering file&#13;
+&#13;
+!3 Patbase&#13;
+* Assign treatment&#13;
+* Get current dose&#13;
+* Receive taught files&#13;
+&#13;
+!3 Aria&#13;
+* Find created patient&#13;
+&#13;
+!2 Printing&#13;
+!3 Report printing&#13;
+* Print plan report&#13;
+* Print treatment report&#13;
+* Print physics report&#13;
+* Print info file&#13;
+&#13;
+!2 Test procedures</description>
+        </task>
+        <task id="20783">
+            <fields>
+                <field title="ID">20783</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Block progress of application when an automatic client is coming</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Mar 04 2019 15:37</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 10 2019 15:09</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Block progress of application when an automatic client is coming&#13;
+!2 Current Status&#13;
+* The application opens and can be operated quite far into the workflow even though an automatic client update is in progress&#13;
+* The user can even go as far as to open and potentially modify a patient with the old client and cause problems&#13;
+&#13;
+!2 Desired change&#13;
+* Modify so that an update is found as soon as possible&#13;
+* So that the user is blocked from opening a patient while an update is not completed&#13;
+* Also block progress in a read only mode.&#13;
+&#13;
+!2 Acceptance Criteria&#13;
+* Information that an update is pending as soon as possible (progress bar)&#13;
+* User cannot open a patient in any mode when an update is pending</description>
+        </task>
+        <task id="20792">
+            <fields>
+                <field title="ID">20792</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Monitor performance times of tasks</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Mar 05 2019 13:55</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 03 2019 13:00</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Monitor performance times of tasks&#13;
+* new structure dialog is too slow</description>
+        </task>
+        <task id="20900">
+            <fields>
+                <field title="ID">20900</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Improvements to Physics Plan Report</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Mar 28 2019 13:22</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 28 2019 17:13</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Improvements to Clinical/Physics Plan Report&#13;
+&#13;
+* The paragraph about DRRs should be moved to the physics plan report&#13;
+* Add an information box if the fields do not all have the same field centres : "Caution: Field centres are not the same throughout plan".&#13;
+* Add checks on minimum and maximum airgap values&#13;
+* Add an Information Box: with a table . One column for field name, one column for airgap value in cm&#13;
+* a row entry for each field with an airgap larger than 20cm&#13;
+* a row entry for each with an airgap less than 7cm&#13;
+* make the values 7 and 20 easily changeable for now&#13;
+* These values will one day be controlled through the "RT_Admin" workspace&#13;
+* Add the teaching summary to the pdf report&#13;
+* List the Hounsfield unit overrides with the name of the structure and hounsfield unit override value&#13;
+&#13;
+!2 Not needed&#13;
+* Verification point and radiobiological path length are not needed in any PDF report</description>
+        </task>
+        <task id="20914">
+            <fields>
+                <field title="ID">20914</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Configuration of which algorithms are defaults</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Apr 01 2019 11:05</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 15 2019 16:22</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Configuration of which algorithms are defaults&#13;
+* configure which algortihms should be default&#13;
+* potentially user specific, role-specfic or deployment specific</description>
+        </task>
+        <task id="20965">
+            <fields>
+                <field title="ID">20965</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Receive patient category automatically from Aria</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Apr 10 2019 16:38</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 29 2019 16:30</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Receive patient category automatically from Aria&#13;
+* requires further investigation, clarification with power users.&#13;
+* do they want diagnoses or just categories.&#13;
+* is it possible to solve this with currently available HL7 interfaces&#13;
+&#13;
+&#13;
+!2 Useful links&#13;
+hier sind alle dokumente zu Hl7 schnittstellen abgelegt:&#13;
+[DIR:255143]&#13;
+\\&#13;
+&#13;
+in diesen dokumenten sind die 'supported events' von Aria aufgelistet..&#13;
+\\&#13;
+[CB:/displayDocument/100021342-02+IEM+Scheduling+Interface+Guide.pdf?doc_id=255146]&#13;
+\\&#13;
+[CB:/displayDocument/IEM+Demographics+%28ADT%29+Interface+Guide+V13.pdf?doc_id=279133]</description>
+        </task>
+        <task id="21009">
+            <fields>
+                <field title="ID">21009</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Allow client side configuration of dicom node</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Apr 25 2019 16:59</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Apr 25 2019 16:59</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Allow client side configuration of dicom node</description>
+        </task>
+        <task id="21010">
+            <fields>
+                <field title="ID">21010</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">User interface to switch Dicom Pacs destination and source</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Apr 25 2019 16:59</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 25 2019 13:56</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1User interface to switch Dicom Pacs destination and source</description>
+        </task>
+        <task id="21047">
+            <fields>
+                <field title="ID">21047</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Patient export . transfer with full data for debugging</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 09 2019 10:50</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 09 2019 10:50</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Patient export . transfer with full data for debugging</description>
+        </task>
+        <task id="21051">
+            <fields>
+                <field title="ID">21051</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Show completed steps visually in plan delivery preapration</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 09 2019 13:20</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 09 2019 13:20</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Show completed steps visually in plan delivery preapration</description>
+        </task>
+        <task id="21062">
+            <fields>
+                <field title="ID">21062</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Improve gamma calculation UI</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 14 2019 10:26</field>
+                <field title="Submitted by">meier_g</field>
+                <field title="Modified at">May 28 2019 17:16</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Improve gamma calculation UI&#13;
+&#13;
+* Improve gamma calculation UI&#13;
+* Handle gamma distribution storage&#13;
+* Set correctly label colorbar</description>
+        </task>
+        <task id="21103">
+            <fields>
+                <field title="ID">21103</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Implement 'Center on structure' action</field>
+                <field title="Status">Refined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 27 2019 13:27</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 27 2019 13:28</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Implement 'Center on structure' action&#13;
+* add a option to jump to the centre coordinate of a structure in all three views.&#13;
+* right click on structure &gt; "Go to Center"&#13;
+* all (typically three) active slice views jump to having their cross hairs at the centre of the view</description>
+        </task>
+        <task id="21173">
+            <fields>
+                <field title="ID">21173</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Patient copy action into other system</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 19 2019 14:08</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 02 2019 16:27</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Patient copy action into other system</description>
+        </task>
+        <task id="21174">
+            <fields>
+                <field title="ID">21174</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Patient move to alterantive FTPP sytem eg. reserarch</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 19 2019 14:09</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 19 2019 14:09</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Patient move to alterantive FTPP sytem eg. reserarch</description>
+        </task>
+        <task id="21175">
+            <fields>
+                <field title="ID">21175</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Patient anonymization</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 19 2019 14:12</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 19 2019 14:12</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Patient anonymization</description>
+        </task>
+        <task id="21176">
+            <fields>
+                <field title="ID">21176</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Field Specific PTV</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 19 2019 14:19</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 19 2019 14:19</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Field Specific PTV</description>
+        </task>
+        <task id="21178">
+            <fields>
+                <field title="ID">21178</field>
+                <field title="Parent"/>
+                <field title="Priority">6</field>
+                <field title="Summary">Airgap checks</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 19 2019 14:47</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jun 19 2019 16:35</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Airgap checks&#13;
+* Different for preabsorber , mixed and no preabsorber&#13;
+* If preabsorber or mixed, warning if airgap is less than 5cm or greater than 20 cm.&#13;
+* If no preabsorber, warning if airgap less than 5cm OR Nozzle extension larger than YYcm.</description>
+        </task>
+        <task id="19297">
+            <fields>
+                <field title="ID">19297</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Clinical Commissioning (with planning/support)</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 02 2018 16:02</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jan 16 2019 15:14</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Clinical Commissioning (with planning/support)&#13;
+* Evaluate commissioning tasks&#13;
+* Begin commisioning documentation&#13;
+* Which documents are needed?</description>
+        </task>
+        <task id="19317">
+            <fields>
+                <field title="ID">19317</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Define Commissioning Tests with beam</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 03 2018 10:53</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jan 16 2019 15:14</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Define Commissioning Tests with beam</description>
+        </task>
+        <task id="19318">
+            <fields>
+                <field title="ID">19318</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">User Documentation / SOPs</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 03 2018 10:54</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Nov 09 2018 15:27</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">User Documentation / SOPs&#13;
+* begin documentation in repository&#13;
+* user manual for whole tool&#13;
+* define structure of document&#13;
+* tex/pdf document</description>
+        </task>
+        <task id="19598">
+            <fields>
+                <field title="ID">19598</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Gy RBE vs Gy for dose display</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jun 29 2018 11:00</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 14 2018 16:05</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Gy RBE vs Gy for dose display&#13;
+*</description>
+        </task>
+        <task id="19699">
+            <fields>
+                <field title="ID">19699</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Dose profiles to also use absolute values</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 13 2018 10:32</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 13 2018 10:32</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Dose profiles to also use absolute values</description>
+        </task>
+        <task id="19848">
+            <fields>
+                <field title="ID">19848</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Add treating physician and assigned planner(s) to "Load Patient" perspective</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 15 2018 15:43</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 20 2018 15:42</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!Add treating physician and assigned planner(s) to "Load Patient" perspective&#13;
+* add a column to patient overview which contains the assigned treating physician&#13;
+* add a column to patient overview which contains the assigned planners</description>
+        </task>
+        <task id="20223">
+            <fields>
+                <field title="ID">20223</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">User Manual</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Oct 09 2018 14:19</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Nov 09 2018 16:59</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!!!User Manual&#13;
+* parent PBI for individual perspectives to produce a user manual</description>
+        </task>
+        <task id="21008">
+            <fields>
+                <field title="ID">21008</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Dicom import should show reply if no data is found with this id</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Apr 25 2019 15:03</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 04 2019 13:56</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Dicom import should show reply if no data is found with this id</description>
+        </task>
+        <task id="21048">
+            <fields>
+                <field title="ID">21048</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Timer notification on save</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">May 09 2019 10:55</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">May 09 2019 10:55</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Timer notification on save&#13;
+* change appearnce of save mechanism after certain time if changes exist&#13;
+* maybe prompt user to save</description>
+        </task>
+        <task id="21287">
+            <fields>
+                <field title="ID">21287</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Check that units are explcit and consistent</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 23 2019 14:27</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 23 2019 14:31</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1Check that units are explcit and consistent&#13;
+&#13;
+* Check units are consistent, explicit and cannot be misinterpreted&#13;
+&#13;
+* Linear units&#13;
+* Radiation units&#13;
+* Weight&#13;
+* Date , time&#13;
+* Housnfield units</description>
+        </task>
+        <task id="21289">
+            <fields>
+                <field title="ID">21289</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">check data entry limits and only valid parameters can be entered</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 23 2019 15:01</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 23 2019 15:01</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1check data entry limits and that only valid parameters can be entered</description>
+        </task>
+        <task id="21290">
+            <fields>
+                <field title="ID">21290</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Export of dicom data</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 23 2019 15:22</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 23 2019 15:22</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">Export of dicom data</description>
+        </task>
+        <task id="21291">
+            <fields>
+                <field title="ID">21291</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Generation of box plans and box structures</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 23 2019 16:11</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 23 2019 16:11</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Generation of box plans and box structures&#13;
+* geometric shapes , boxes, spheres , ellipses etc.</description>
+        </task>
+        <task id="21292">
+            <fields>
+                <field title="ID">21292</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">PLan robustness evaluation</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Jul 23 2019 16:15</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Jul 23 2019 16:15</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Plan robustness evaluation</description>
+        </task>
+        <task id="21338">
+            <fields>
+                <field title="ID">21338</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Import and conversion of existing psiplan data</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 07 2019 09:48</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 07 2019 09:48</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Import and conversion of existing psiplan data</description>
+        </task>
+        <task id="21347">
+            <fields>
+                <field title="ID">21347</field>
+                <field title="Parent"/>
+                <field title="Priority">5</field>
+                <field title="Summary">Change dose calculation to XYZ</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Assigned to"/>
+                <field title="Submitted at">Aug 09 2019 13:53</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Aug 20 2019 16:48</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Start Date"/>
+                <field title="End Date"/>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Subject"/>
+            </fields>
+            <description format="W">!1 Change dose calculation to XYZ&#13;
+* move dose calculation into XYZ .&#13;
+* optimisation in XYZ as well.&#13;
+* display will require interpolation&#13;
+* Should DVHs be calculated from interpolated dose or voxel dose ?&#13;
+* STU distributions for verification</description>
+        </task>
+    </tracker>
+</root>
