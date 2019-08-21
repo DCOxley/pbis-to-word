@@ -3,6 +3,8 @@ package ch.psi.cpt.dave.test.worddocument.io;
 import java.io.File;
 
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.UnmarshalException;
 import javax.xml.bind.Unmarshaller;
 
 import ch.psi.cpt.dave.test.worddocument.model.xml.Root;
@@ -15,7 +17,7 @@ public class PBIReportReader {
 		this.file = file;
 	}
 	
-	public Root read() throws Exception {
+	public Root read() throws JAXBException {
 		JAXBContext jaxbContext = JAXBContext.newInstance(Root.class);
 
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();

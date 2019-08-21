@@ -23,10 +23,16 @@ public class MakeDocument {
 		PBIReportReader reader = new PBIReportReader(new File(INPUT_RESOURCE_DIRECTORY + documentName + ".xml"));
 		Root root = reader.read();
 
+		if (root == null) {
+			throw new MakeDocumentException("No root entity found");
+		}
+
 		XmlToPBIAdapter adapter = new XmlToPBIAdapter();
 
 		List<PBITask> pbiTasks = adapter.construct(root);
-		assert (pbiTasks.size() > 0);
+		if (pbiTasks == null || pbiTasks.size() == 0) {
+			throw new MakeDocumentException("No pbi tasks constructed");
+		}
 
 		// Define document
 		WordDocumentCreator documentCreator = new WordDocumentCreator(pbiTasks);
