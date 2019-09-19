@@ -18,7 +18,7 @@ public class MakeDocument {
 
 	public static void main(String[] args) throws Exception {
 
-		String documentName = "TechnicalFull";
+		String documentName = "VerificationOptimisation";
 		// Parse PBIs from XML
 		PBIReportReader reader = new PBIReportReader(new File(INPUT_RESOURCE_DIRECTORY + documentName + ".xml"));
 		Root root = reader.read();
