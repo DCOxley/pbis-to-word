@@ -1,0 +1,1881 @@
+<root>
+    <tracker id="304695" name="PBI" project="CPT_FTPP">
+        <task id="20963">
+            <fields>
+                <field title="ID">20963</field>
+                <field title="Parent"/>
+                <field title="Priority">7</field>
+                <field title="Summary">Abolute Dosimetry changes</field>
+                <field title="Status">Completed</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 13 2019 13:03</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Abolute Dosimetry changes&#13;
+&#13;
+[Documentation Wiki page | WIKIPAGE:329433]&#13;
+&#13;
+* Define data input parsers&#13;
+* Define mathematical tools / fitters&#13;
+* Define GUI&#13;
+* Define 'main workhorse' fitting. Actually interpolations&#13;
+* Define Export</description>
+        </task>
+        <task id="21455">
+            <fields>
+                <field title="ID">21455</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Interpolation of Bragg peaks in between energies</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 11 2019 17:49</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Interpolation of Bragg peaks in between energies&#13;
+&#13;
+!2 Literature&#13;
+* [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3522746/]</description>
+        </task>
+        <task id="21456">
+            <fields>
+                <field title="ID">21456</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Accept Bragg peak energies from list</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 16 2019 09:34</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Accept Bragg peak energies from list&#13;
+* User must be able to input a list (most likely in a file format e.g. csv) to define the energies of the Bragg peaks he/she wishes to create&#13;
+* The information frm this file should be stored, retrievable and displayable&#13;
+* The import should be noted as an event&#13;
+* The approval should be stored as an event</description>
+        </task>
+        <task id="21466">
+            <fields>
+                <field title="ID">21466</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Find and use library to parse .json files</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint">[SPR-21484] - Sprint 18 September 18th - October 1st 2019</field>
+                <field title="Modified at">Sep 18 2019 10:35</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Find and use library to parse .json files&#13;
+&#13;
+&#13;
+[DOC:329549]&#13;
+\\&#13;
+{{{&#13;
+{"phaseSpaceMeasurement": {&#13;
+	"configuration": [&#13;
+	{&#13;
+		"sPlane_mm": -396,&#13;
+		"nozzleExtraction_mm": 10,&#13;
+		"gantryAngle_deg": 0,&#13;
+		"preabsorberIn": "false",&#13;
+		"SpotWidthMeasurement": [&#13;
+			{&#13;
+			"Energies": [&#13;
+			{"Energy_MeV":70,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":80,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":90,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":100,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":110,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":120,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":130,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":140,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":150,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":160,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":170,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":180,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":190,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":200,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":210,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":220,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			}&#13;
+			]&#13;
+			}&#13;
+			]&#13;
+	},&#13;
+	{&#13;
+		"sPlane_mm": -264,&#13;
+		"nozzleExtraction_mm": 10,&#13;
+		"gantryAngle_deg": 0,&#13;
+		"preabsorberIn": "false",&#13;
+		"SpotWidthMeasurement": [&#13;
+			{&#13;
+			"Energies": [&#13;
+			{"Energy_MeV":70,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":80,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":90,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":100,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":110,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":120,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":130,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":140,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":150,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":160,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":170,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":180,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":190,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":200,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":210,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":220,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			}&#13;
+			]&#13;
+			}&#13;
+			]&#13;
+	},&#13;
+	{&#13;
+		"sPlane_mm": -132,&#13;
+		"nozzleExtraction_mm": 10,&#13;
+		"gantryAngle_deg": 0,&#13;
+		"preabsorberIn": "false",&#13;
+		"SpotWidthMeasurement": [&#13;
+			{&#13;
+			"Energies": [&#13;
+			{"Energy_MeV":70,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":80,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":90,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":100,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":110,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":120,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":130,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":140,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":150,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":160,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":170,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":180,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":190,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":200,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":210,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":220,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			}&#13;
+			]&#13;
+			}&#13;
+			]&#13;
+	},&#13;
+		{&#13;
+		"sPlane_mm": 0,&#13;
+		"nozzleExtraction_mm": 10,&#13;
+		"gantryAngle_deg": 0,&#13;
+		"preabsorberIn": "false",&#13;
+		"SpotWidthMeasurement": [&#13;
+			{&#13;
+			"Energies": [&#13;
+			{"Energy_MeV":70,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":80,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":90,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":100,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":110,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":120,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":130,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":140,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":150,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":160,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":170,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":180,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":190,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":200,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":210,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":220,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			}&#13;
+			]&#13;
+			}&#13;
+			]&#13;
+	},&#13;
+		{&#13;
+		"sPlane_mm": 99,&#13;
+		"nozzleExtraction_mm": 10,&#13;
+		"gantryAngle_deg": 0,&#13;
+		"preabsorberIn": "false",&#13;
+		"SpotWidthMeasurement": [&#13;
+			{&#13;
+			"Energies": [&#13;
+			{"Energy_MeV":70,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":80,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":90,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":100,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":110,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":120,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":130,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":140,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":150,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":160,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":170,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":180,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":190,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":200,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":210,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			},&#13;
+			{"Energy_MeV":220,&#13;
+				"spots":[&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": -40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 0.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": -40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 0.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 40.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183},&#13;
+				{"Tcoordinate_mm": 80.0, "Ucoordinate_mm": 40.0, "sigmaT_mm": 3.738,"sigmaU_mm": 5.183}&#13;
+				]&#13;
+			}&#13;
+			]&#13;
+			}&#13;
+			]&#13;
+	}&#13;
+	]&#13;
+}&#13;
+}&#13;
+}}}</description>
+        </task>
+        <task id="21467">
+            <fields>
+                <field title="ID">21467</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Handle subsets of measured beam width in air</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 16 2019 09:50</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Handle subsets of measured beam width in air&#13;
+* must handle arbitrary energy steps&#13;
+* must handle multiple z planes&#13;
+* must handle multiple nozzle extensions&#13;
+* nice to have : handle multiple spots per measurement plane&#13;
+* upon import, perform a consistency check between energies with and without preabsorber. must be consistent.&#13;
+** Same energies in preabsorber and no preabsorber.</description>
+        </task>
+        <task id="21468">
+            <fields>
+                <field title="ID">21468</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Investigate / define function to describe preabsorber moments</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 13 2019 11:07</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Investigate / define function to describe preabsorber moments</description>
+        </task>
+        <task id="21469">
+            <fields>
+                <field title="ID">21469</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Investigate / define approach to paramterize beam optics</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 13 2019 11:10</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Investigate / define approach to paramterize beam optics</description>
+        </task>
+        <task id="21470">
+            <fields>
+                <field title="ID">21470</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">User interface to import depth dose curves and phase space json files</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 18 2019 08:24</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee">[REFINEE-20440] - To be refined</field>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1User interface to import depth dose curves and phase space json files&#13;
+!2 Depth dose curves&#13;
+&#13;
+&#13;
+!2 Phase Space Data</description>
+        </task>
+        <task id="21472">
+            <fields>
+                <field title="ID">21472</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Generation of box plans / box dose distributions</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 13 2019 13:26</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Generation of box plans / box dose distributions</description>
+        </task>
+        <task id="21473">
+            <fields>
+                <field title="ID">21473</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Optimisation for constant weight per energy layer</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 18 2019 08:28</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Optimisation for constant weight per energy layer&#13;
+* Implement an optimiser which treats all spots in one energy layer the same and gives them the same weight&#13;
+* This is needed for optimising the box plans</description>
+        </task>
+        <task id="21476">
+            <fields>
+                <field title="ID">21476</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Input three types of beam width measurements</field>
+                <field title="Status">Unrefined</field>
+                <field title="Severity"/>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Modified at">Sep 18 2019 08:27</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Spent Effort"/>
+                <field title="% Spent / Plan"/>
+                <field title="Refinee">[REFINEE-20440] - To be refined</field>
+                <field title="Effort"/>
+                <field title="Project">G2-39 Dosim Rev</field>
+                <field title="Submitted by">oxley_d</field>
+            </fields>
+            <description format="W">!1Input three types of beam width measurements&#13;
+* Beam width in air measurements will be imported for three different measurement "Types"&#13;
+* A "Type" of measurement shall be defined as a beam width in air measurement where a different parameter of the measurement was varied&#13;
+* There shall be three types&#13;
+** Beam width for fixed measurement plane, at least 3 (probably 5) nozzle extractions, and number of energy sets E&#13;
+** Beam width for at least 3 (probably 5) measurements planes, fixed nozzle extractions and number of energy sets E&#13;
+** Beam width for fix measurement plane, at least 3 (probably 5) nozzle extractions, with preabsorber and number of energy sets E</description>
+        </task>
+    </tracker>
+</root>

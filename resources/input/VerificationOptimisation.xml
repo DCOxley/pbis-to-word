@@ -1,0 +1,268 @@
+<root>
+    <tracker id="304695" name="PBI" project="CPT_FTPP">
+        <task id="19332">
+            <fields>
+                <field title="ID">19332</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Logfile transfer service</field>
+                <field title="Status">Refined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint">[SPR-21484] - Sprint 18 September 18th - October 1st 2019</field>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 18 2019 10:33</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort">86400000</field>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1 Logfile transfer service&#13;
+&#13;
+* web service to get list of qa logs per patient&#13;
+* web service to get a specific qa log file&#13;
+* web services to be implemented in 1724 by alex mayor&#13;
+* Playground mock up [http://therapyserver:8888/json]&#13;
+* web services specs: [ISSUE:21447]&#13;
+* [!LogfileTransferUI.png]</description>
+        </task>
+        <task id="19668">
+            <fields>
+                <field title="ID">19668</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">logfile analysis tools</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 16 2019 09:26</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!!!Logfile Analysis Tools&#13;
+* Some specific logfile analysis results need to be provided.&#13;
+* When showing two dose distributions (dont really have to be exclusive to log files) in the comparison perspective, then it should be possible to show a dialog which calculates and shows the following parameters:&#13;
+** Max Dose (%)&#13;
+** Mean Dose (%)&#13;
+** Minimum Dose (%)&#13;
+** Gamma analysis pass rate (3% , 3mm)&#13;
+** The pass rate should be adjustable by user&#13;
+** Profiles (Are profiles necessary in dose distributions?) (?)&#13;
+* It should be possible to export a figure of the dose (dose difference) in to the file system as a .png&#13;
+* FTPP should propose a sensible filename for the figure e.g.&#13;
+{{{&#13;
+P19001_TR1_Series1_FR01_Log_ZSlice15.png&#13;
+}}}</description>
+        </task>
+        <task id="21449">
+            <fields>
+                <field title="ID">21449</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Logfile Result Summation</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 16 2019 17:21</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!Logfile Result Summation&#13;
+* a type pf "plan sum"&#13;
+* containing different logfile calculations&#13;
+* user interface must be flexible enough to handle summations from different days, different fractions</description>
+        </task>
+        <task id="21451">
+            <fields>
+                <field title="ID">21451</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Apply a low dose threshold to the pixels included in the analysis</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 16 2019 12:14</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1 Apply a low dose threshold to the pixels included in the analysis&#13;
+* default value of 10%&#13;
+* for example 10%&#13;
+** 10% of prescribed dose for that field or plan.</description>
+        </task>
+        <task id="21452">
+            <fields>
+                <field title="ID">21452</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Max and Min dose difference results</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 11 2019 16:30</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1Max and Mindose difference results&#13;
+* Minimum&#13;
+* Maximum&#13;
+* per field and per plan&#13;
+* absolute or relative</description>
+        </task>
+        <task id="21453">
+            <fields>
+                <field title="ID">21453</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Percentage of voxels below X % in difference</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 16 2019 11:25</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1 Percentage of voxels below X % in difference&#13;
+* after calculating a dose difference show percentage of voxels with a difference value less than defined percentage X.&#13;
+** e.g. what percentage of voxels were within 1% ?&#13;
+* standard values 1% and 3%</description>
+        </task>
+        <task id="21454">
+            <fields>
+                <field title="ID">21454</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Dose difference histogram</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 11 2019 17:00</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1Dose difference histogram&#13;
+&#13;
+* Histogram of dose difference values</description>
+        </task>
+        <task id="21461">
+            <fields>
+                <field title="ID">21461</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Generate a logfile analysis report</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 16 2019 12:10</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1 Generate a logfile analysis report&#13;
+* should include&#13;
+** min and max dose difference for each field and for a plan&#13;
+** user to select which organs at risk / targets (structures) should be included in the report with a DVH and a dose difference histogram&#13;
+** percentage of voxels with dose below 1% and 3%&#13;
+** gamma result : number of voxels with gamma index less than 1 , given X % Y mm .</description>
+        </task>
+        <task id="21462">
+            <fields>
+                <field title="ID">21462</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Percentage of low weighted spots in a logfile</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 12 2019 16:08</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1Percentage of low weighted spots in a logfile</description>
+        </task>
+        <task id="21463">
+            <fields>
+                <field title="ID">21463</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Calculate a logfile with teaching correction from a different logfile</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 12 2019 16:09</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!1Calculate a logfile with teaching correction from a different logfile</description>
+        </task>
+        <task id="21465">
+            <fields>
+                <field title="ID">21465</field>
+                <field title="Parent"/>
+                <field title="Priority">1</field>
+                <field title="Summary">Calculate a logfile on a different CT</field>
+                <field title="Status">Unrefined</field>
+                <field title="Resolution"/>
+                <field title="Category">Clinical</field>
+                <field title="Sprint"/>
+                <field title="Submitted by">oxley_d</field>
+                <field title="Modified at">Sep 16 2019 11:51</field>
+                <field title="Modified by">oxley_d</field>
+                <field title="Planned Effort"/>
+                <field title="Refinee"/>
+                <field title="Effort"/>
+                <field title="Project">G2-34 Verif Opt</field>
+            </fields>
+            <description format="W">!Calculate a logfile on a different CT&#13;
+* import a registered EvaluationCT&#13;
+* maintain the registration into FTPP&#13;
+* perform a logfile calculation from a treatment series on this Evaluation CT&#13;
+* normal evaluation tools should then be usable</description>
+        </task>
+    </tracker>
+</root>
